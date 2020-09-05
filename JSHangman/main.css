@@ -24,9 +24,54 @@ h1 {
     background-color: rgba(50, 117, 168, 0.7);
     flex: 1;
     margin: 0px 10px;
+    border: 2px solid black;
 }
 
 #text {
     flex: 1;
     margin: 0px 10px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#main-text {
+    display: flex;
+}
+
+#left-text {
+    flex: 1;
+}
+
+#right-text {
+    flex: 1;
+}
+
+#instructions {
+    margin: 10px;
+}
+
+#guess-space {
+    font-size: large;
+    letter-spacing: 0.75em;
+    margin: 20px
+}
+
+button {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    width: 30%;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+input {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    width: 80%;
+    margin: 10px;
+    padding: 2px 2px;
+    border: 2px solid black;
+    border-radius: 4px;
 }
