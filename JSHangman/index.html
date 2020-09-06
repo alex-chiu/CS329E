@@ -24,7 +24,7 @@
                 <p id="instructions">Please enter a word! Make sure it is not a name or slang. The maximum word length is 15 letters long.</p>
                 <div id="main-text">
                     <div id="left-text">
-                        <input id="input-box" placeholder="Tree, Dog, Austin, etc." maxlength = 15>
+                        <input id="input-box" placeholder="Tree, Dog, Austin, etc." maxlength=15, autofocus=true>
                         <input id="letter-input" placeholder="Guess here!" maxlength=15>
                     </div>
                     <div id="right-text">
@@ -33,6 +33,10 @@
                     </div>
                 </div>
                 <div id="guess-space"></div>
+                <div id="wrong-guesses">
+                    <p>Wrong Guesses</p>
+                    <p id="wrong-guess-content"></p>
+                </div>
             </div>
         </div>
         <script src="game.js"></script>
