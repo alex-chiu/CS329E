@@ -1,6 +1,6 @@
 // JS Hangman Code
 
-// Define variables
+// Initialize variables
 var gameStarted = false;
 var word = "";
 var guessedWord = "";
@@ -212,4 +212,7 @@ function restartGame() {
     // Clear wrong guess space
     document.getElementById("wrong-guess-content").innerHTML = "";
     document.getElementById("wrong-guess-counter").innerHTML = "Wrong Guesses: 0";
+
+    // Hide play again button
+    document.getElementById("restart-button").style.display="none";
 }

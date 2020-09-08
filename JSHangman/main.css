@@ -3,15 +3,39 @@ body {
     height: 100vh;
 }
 
+h1 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    width: 30%;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+input {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    width: 80%;
+    margin: 10px;
+    padding: 2px 2px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.drawing {
+    stroke:rgb(0, 0, 0); 
+    stroke-width: 5;
+}
+
 #title-container {
     background-color: rgba(50, 168, 82, 0.7);
     border: 5px solid black;
     margin: 10px;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
 }
 
 #game {
@@ -71,28 +95,4 @@ h1 {
 #wrong-guess-content {
     letter-spacing: 0.75em;
     line-height: 2em;
-}
-
-.drawing {
-    stroke:rgb(0, 0, 0); 
-    stroke-width: 5;
-}
-
-button {
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
-    width: 30%;
-    margin: 10px;
-    border: 2px solid black;
-    border-radius: 4px;
-}
-
-input {
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
-    width: 80%;
-    margin: 10px;
-    padding: 2px 2px;
-    border: 2px solid black;
-    border-radius: 4px;
 }
