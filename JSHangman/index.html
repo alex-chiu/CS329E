@@ -19,9 +19,22 @@
             </h1>
         </div>
         <div id="game">
-            <div id="drawing"></div>
+            <div id="drawing">
+                <svg height = 100% width = "100%">
+                    <line x1=50% y1=25% x2=50% y2=30% class="drawing"/>
+                    <line x1=25% y1=25% x2=50% y2=25% class="drawing"/>
+                    <line x1=25% y1=25% x2=25% y2=75% class="drawing"/>
+                    <line x1=0% y1=75% x2=100% y2=75% class="drawing"/>
+                    <circle cx=50% cy=35% r=4.5% class="drawing" fill="none" id="drawing-head" visibility="hidden"/>
+                    <line x1=50% y1=40% x2=50% y2=55% class="drawing" id="drawing-body" visibility="hidden"/>
+                    <line x1=50% y1=45% x2=45% y2=47.5% class="drawing" id="l-arm" visibility="hidden"/>
+                    <line x1=50% y1=45% x2=55% y2=47.5% class="drawing" id="r-arm" visibility="hidden"/>
+                    <line x1=50% y1=55% x2=45% y2=60% class="drawing" id="l-leg" visibility="hidden"/>
+                    <line x1=50% y1=55% x2=55% y2=60% class="drawing" id="r-leg" visibility="hidden"/>
+                </svg>
+            </div>
             <div id="text">
-                <p id="instructions">Please enter a word! Make sure it is not a name or slang. The maximum word length is 15 letters long.</p>
+                <p id="instructions">Please enter a word! Make sure it is not a name or slang. The maximum word length is 15 letters long. You lose after 6 incorrect guesses!</p>
                 <div id="main-text">
                     <div id="left-text">
                         <input id="input-box" placeholder="Tree, Dog, Austin, etc." maxlength=15, autofocus=true>
@@ -34,9 +47,12 @@
                 </div>
                 <div id="guess-space"></div>
                 <div id="wrong-guesses">
-                    <p>Wrong Guesses</p>
+                    <p id="wrong-guess-counter">Wrong Guesses: 0</p>
                     <p id="wrong-guess-content"></p>
                 </div>
+                <br>
+                <br>
+                <button id="restart-button" style="display: none">Play Again!</button>
             </div>
         </div>
         <script src="game.js"></script>

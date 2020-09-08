@@ -73,6 +73,11 @@ h1 {
     line-height: 2em;
 }
 
+.drawing {
+    stroke:rgb(0, 0, 0); 
+    stroke-width: 5;
+}
+
 button {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
